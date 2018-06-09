@@ -14,5 +14,21 @@ namespace Xamarin.Forms.Portable4.Views
         {
             InitializeComponent();
         }
+
+        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            //await Navigation.PushAsync(new EntryPage(sender, e));
+
+        }
+
+        private void OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            //this.Navigation.PushAsync(new EntryPage(e));
+            //Navigation.PopAsync();
+            //DisplayAlert("Item Tapped", item.ToString(), "Ok");
+
+        }
+
+
     }
 }
