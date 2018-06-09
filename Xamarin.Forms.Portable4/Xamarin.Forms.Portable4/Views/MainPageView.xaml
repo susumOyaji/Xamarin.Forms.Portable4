@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Xamarin.Forms.Portable4.Views.MainPageView"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:controls="clr-namespace:Xamarin.Forms.Portable4.Controls;assembly=Xamarin.Forms.Portable4"
+            xmlns:viewModels="clr-namespace:Xamarin.Forms.Portable4.ViewModels;assembly=Xamarin.Forms.Portable4"
+            ItemsSource="{Binding ContentPageViewModels}">
+
+  <ContentPage.BindingContext>
+    <viewModels:MainPageViewModel />
+  </ContentPage.BindingContext>
+
+  <ListView.ItemTemplate>
+    <controls:ContentPageDataTemplateSelector>
+      <controls:ContentPageDataTemplateSelector.ContentPage1>
+        <DataTemplate>
+         <ViewCell>
+          <ContentPage Title="1">
+            <Label Text="{Binding Title}" TextColor="Red" VerticalOptions="Center" HorizontalOptions="Center"/>
+          </ContentPage>
+         </ViewCell>
+        </DataTemplate>
+               
+      </controls:ContentPageDataTemplateSelector.ContentPage1>
+      <controls:ContentPageDataTemplateSelector.ContentPage2>
+        <DataTemplate>
+          <ViewCell>
+            <ContentPage Title="2">
+                <Label Text="{Binding Title}" TextColor="Blue" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </ContentPage>
+          </ViewCell>
+        </DataTemplate>
+      </controls:ContentPageDataTemplateSelector.ContentPage2>
+    </controls:ContentPageDataTemplateSelector>
+  </ListView.ItemTemplate>
+
+</ContentPage>
