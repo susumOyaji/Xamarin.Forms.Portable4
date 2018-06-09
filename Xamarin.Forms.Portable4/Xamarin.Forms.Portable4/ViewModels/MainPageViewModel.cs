@@ -7,14 +7,36 @@ namespace Xamarin.Forms.Portable4.ViewModels
     {
         public MainPageViewModel()
         {
-            var ContentPageViewModels = new ContentPageViewModel[]
-            {
-                new ContentPage1ViewModel(),
-                new ContentPage2ViewModel(),
-            };
-
-            this.ContentPages = new ObservableCollection<ContentPageViewModel>(ContentPageViewModels);
+           //Selecter(false);
         }
+
+
+        public void Selecter(bool disp)
+        {
+            ContentPageViewModel[] ContentPageViewModels;
+
+            if (disp == true)
+            {
+
+                ContentPageViewModels = new ContentPageViewModel[]
+                {
+                    new ContentPage1ViewModel()
+                };
+
+            }
+            else{
+                
+                ContentPageViewModels = new ContentPageViewModel[]
+                {
+                    new ContentPage2ViewModel()
+                };
+
+            }
+                      
+           this.ContentPages = new ObservableCollection<ContentPageViewModel>(ContentPageViewModels);
+
+        }
+
 
         private ObservableCollection<ContentPageViewModel> _ContentPages;
 

@@ -26,7 +26,7 @@ namespace Xamarin.Forms.Portable4.ViewModels
 
         public ContentPage1ViewModel()
         {
-            this.Title = "ContentPage1";
+            this.Title = "Stock";
         }
 
     }
@@ -34,7 +34,7 @@ namespace Xamarin.Forms.Portable4.ViewModels
     {
         public ContentPage2ViewModel()
         {
-            this.Title = "ContentPage2";
+            this.Title = "Ranking Serchi";
         }
 
     }

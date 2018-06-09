@@ -37,7 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Controls\TabbedPageDataTemplateSelector.cs" />
+    <Compile Include="Controls\ContentPageDataTemplateSelector.cs" />
     <Compile Include="Converters\BooleanInvertConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
