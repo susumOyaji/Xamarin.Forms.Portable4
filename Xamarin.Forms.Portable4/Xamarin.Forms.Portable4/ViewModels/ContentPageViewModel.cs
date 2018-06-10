@@ -27,9 +27,13 @@ namespace Xamarin.Forms.Portable4.ViewModels
         public ContentPage1ViewModel()
         {
             this.Title = "Stock";
+
+            this.ListItem.Add(Title = "SampleSony");
+
         }
 
     }
+
     public sealed class ContentPage2ViewModel : ContentPageViewModel
     {
         public ContentPage2ViewModel()

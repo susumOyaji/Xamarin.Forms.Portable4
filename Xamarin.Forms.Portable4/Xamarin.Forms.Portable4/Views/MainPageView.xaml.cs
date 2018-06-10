@@ -15,6 +15,8 @@ namespace Xamarin.Forms.Portable4.Views
             InitializeComponent();
         }
 
+
+
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             //await Navigation.PushAsync(new EntryPage(sender, e));
@@ -29,6 +31,6 @@ namespace Xamarin.Forms.Portable4.Views
 
         }
 
-
+       
     }
 }
